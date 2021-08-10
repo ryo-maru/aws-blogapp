@@ -1,10 +1,10 @@
-config valid only for current version of Capistrano
+#config valid only for current version of Capistrano
 lock '3.6.0'
 # デプロイするアプリケーション名
 set :application, 'aws_bloapp'
 # cloneするgitのレポジトリ
 # （xxxxxxxx：ユーザ名、yyyyyyyy：アプリケーション名）
-set :repo_url, 'git@github.com:ryo-maru/aws-blogapp.git'
+set :repo_url, 'https://github.com/ryo-maru/aws-blogapp.git'
 # deployするブランチ。デフォルトでmainを使用している場合、masterをmainに変更してください。
 set :branch, ENV['BRANCH'] || 'master'
 # deploy先のディレクトリ。
